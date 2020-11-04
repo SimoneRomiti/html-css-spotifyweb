@@ -67,7 +67,6 @@ main{
 .create{
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
 }
 .create i{
   font-size: 30px;
@@ -76,6 +75,9 @@ main{
 
 .playlist-name{
   height: 140px;
+}
+.playlist-name ul{
+  padding-top: 10px;
 }
 .playlist-name li{
   margin-bottom: 10px;
@@ -88,6 +90,7 @@ main{
   background: #040404;
   position: fixed;
   bottom: 60px;
+  z-index: 2;
 }
 
 .install hr{
@@ -98,9 +101,10 @@ main{
   color: white;
   font-weight: 700;
 }
+/* /MAIN-NAV */
 
 
-
+/* MAIN-CONTENT */
 .main-content{
   width: calc(100% - 200px);
   margin-left: 200px;
@@ -128,6 +132,7 @@ main{
   border-radius: 10px;
   border: 1px solid white;
 }
+/* /MAIN-CONTENT */
 
 
 footer{
@@ -138,7 +143,7 @@ footer{
   bottom: 0;
 }
 
-
+/* MEDIA QUERY PER MAIN-NAV */
 @media screen and (max-width: 768px) {
 
   .disappear, .logo .disappear{
@@ -152,8 +157,6 @@ footer{
   .main-nav, .install{
     text-align: center;
     width: 50px;
-  }
-  .install{
     padding-left: 0;
     padding-right: 0;
   }
@@ -170,7 +173,6 @@ footer{
     width: calc(100% - 50px);
   }
 
-
   .install .fas.fa-user-circle{
     display: block;
     padding-top: 10px;
@@ -178,8 +180,10 @@ footer{
   }
 
 }
+/* /MEDIA QUERY PER MAIN-NAV */
 
 
+/* MEDIA QUERY PER SCROLL NOME PLAYLIST E SCOMPARSA INSTALL */
 @media screen and (max-height: 559px){
 
   .playlist-name{
@@ -192,7 +196,7 @@ footer{
 @media screen and (max-height: 525px){
 
   .playlist-name{
-    height: 100px;
+    height: 95px;
   }
 
 }
@@ -200,7 +204,7 @@ footer{
 @media screen and (max-height: 500px){
 
   .playlist-name{
-    height: 70px;
+    height: 65px;
   }
 
 }
@@ -208,7 +212,25 @@ footer{
 @media screen and (max-height: 470px){
 
   .playlist-name{
-    height: 80px;
+    height: 60px;
+    position: fixed;
+    width: 160px;
+    z-index: 2;
+    background: #040404;
+  }
+
+  .install{
+    /* display: none; */
+    z-index: 0;
+  }
+
+}
+
+@media screen and (max-height: 400px){
+
+  .playlist-name{
+    position: static;
+    background: #040404;
   }
 
   .install{
@@ -216,3 +238,4 @@ footer{
   }
 
 }
+/* /MEDIA QUERY PER SCROLL NOME PLAYLIST */
