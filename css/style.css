@@ -38,6 +38,7 @@ main{
 
 .home i{
   width: 16px;
+  height: 16px;
 }
 
 .home, .search, .library{
@@ -135,6 +136,47 @@ footer{
   background: #282828;
   position: fixed;
   bottom: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .disappear, .logo .disappear{
+    display: none;
+  }
+
+  .logo i{
+    font-size: 20px;
+  }
+
+  .main-nav, .install{
+    text-align: center;
+    width: 50px;
+  }
+  .install{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .logo, .home, .search, .library{
+    padding-left: 0;
+  }
+
+  .main-content{
+    width: calc(100% - 50px);
+    margin-left: 50px;
+  }
+  .upgrade{
+    width: calc(100% - 50px);
+  }
+
+
+  .install .fas.fa-user-circle{
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+  }
+
 }
 
 
