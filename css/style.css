@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  color: grey;
+}
+
 main{
   height: calc(100vh - 90px);
   background: #040404;
