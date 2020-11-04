@@ -5,31 +5,112 @@
 }
 
 main{
-  background: blue;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 60px);
+  background: #040404;
 }
 
+/* MAIN-NAV */
 .main-nav{
   width: 200px;
+  height: calc(100vh - 130px);
+  padding-top: 20px;
   background: #040404;
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 90px;
-
+  bottom: 60px;
 }
+
+.logo{
+  padding-bottom: 15px;
+}
+
+.logo, .home, .search, .library{
+  padding-left: 20px;
+}
+.logo i, .logo h1{
+  font-size: 30px;
+  color: white;
+}
+.logo h1{
+  display: inline-block;
+}
+
+.home i{
+  width: 16px;
+}
+
+.home, .search, .library{
+  font-size: 16px;
+}
+
+.home{
+  color: white;
+  border-left: 2px solid green;
+}
+
+.search{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.playlist, .install{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.playlist h3{
+  color: white;
+}
+
+.create{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.create i{
+  font-size: 30px;
+  padding-right: 5px;
+}
+
+.playlist-name{
+  height: 140px;
+}
+.playlist-name li{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.install{
+  width: 200px;
+  height: 70px;
+  background: #040404;
+  position: fixed;
+  bottom: 60px;
+}
+
+.install hr{
+  margin: 5px 0;
+}
+
+.username{
+  color: white;
+  font-weight: 700;
+}
+
+
 
 .main-content{
   width: calc(100% - 200px);
   margin-left: 200px;
-  padding-top: 90px;
+  padding-top: 60px;
   height: 100%;
   background: #121212;
   overflow-y: scroll;
 }
 
 .upgrade{
-  height: 90px;
+  height: 60px;
   width: calc(100% - 200px);
   padding: 20px;
   position: fixed;
@@ -37,21 +118,59 @@ main{
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(100, 100, 100, 0.4);
 }
 .my-btn{
   padding: 10px;
   color: white;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   border: 1px solid white;
 }
 
 
 footer{
-  height: 90px;
+  height: 60px;
   width: 100%;
   background: #282828;
   position: fixed;
   bottom: 0;
+}
+
+
+@media screen and (max-height: 559px){
+
+  .playlist-name{
+    overflow-y: scroll;
+    height: 120px;
+  }
+
+}
+
+@media screen and (max-height: 525px){
+
+  .playlist-name{
+    height: 100px;
+  }
+
+}
+
+@media screen and (max-height: 500px){
+
+  .playlist-name{
+    height: 70px;
+  }
+
+}
+
+@media screen and (max-height: 470px){
+
+  .playlist-name{
+    height: 80px;
+  }
+
+  .install{
+    display: none;
+  }
+
 }
