@@ -5,14 +5,14 @@
 }
 
 main{
-  height: calc(100vh - 60px);
+  height: calc(100vh - 90px);
   background: #040404;
 }
 
 /* MAIN-NAV */
 .main-nav{
   width: 200px;
-  height: calc(100vh - 130px);
+  height: calc(100vh - 160px);
   padding-top: 20px;
   background: #040404;
   position: fixed;
@@ -89,7 +89,7 @@ main{
   height: 70px;
   background: #040404;
   position: fixed;
-  bottom: 60px;
+  bottom: 90px;
   z-index: 2;
 }
 
@@ -136,11 +136,60 @@ main{
 
 
 footer{
-  height: 60px;
+  padding: 15px;
+  height: 90px;
   width: 100%;
   background: #282828;
   position: fixed;
   bottom: 0;
+}
+
+.playback{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.playback img{
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.song-artist{
+  color: white;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.song-name{
+  color: grey;
+  font-size: 12px;
+}
+
+.like i{
+  font-size: 16px;
+  color: gray;
+}
+.like i:last-child{
+  margin-left: 10px;
+}
+
+.playback, .player, .volume{
+  width: 33.33%;
+  float: left;
+}
+
+.player{
+  text-align: center;
+}
+.player i{
+  color: white;
+}
+
+.volume{
+  text-align: right;
+}
+.volume i{
+  color: grey;
 }
 
 /* MEDIA QUERY PER MAIN-NAV */
@@ -184,35 +233,35 @@ footer{
 
 
 /* MEDIA QUERY PER SCROLL NOME PLAYLIST E SCOMPARSA INSTALL */
-@media screen and (max-height: 559px){
+@media screen and (max-height: 575px){
 
   .playlist-name{
     overflow-y: scroll;
+    height: 145px;
+  }
+
+}
+
+@media screen and (max-height: 563px){
+
+  .playlist-name{
     height: 120px;
   }
 
 }
 
-@media screen and (max-height: 525px){
+@media screen and (max-height: 535px){
 
   .playlist-name{
-    height: 95px;
+    height: 90px;
   }
 
 }
 
-@media screen and (max-height: 500px){
+@media screen and (max-height: 507px){
 
   .playlist-name{
     height: 65px;
-  }
-
-}
-
-@media screen and (max-height: 470px){
-
-  .playlist-name{
-    height: 60px;
     position: fixed;
     width: 160px;
     z-index: 2;
@@ -220,13 +269,12 @@ footer{
   }
 
   .install{
-    /* display: none; */
     z-index: 0;
   }
 
 }
 
-@media screen and (max-height: 400px){
+@media screen and (max-height: 435px){
 
   .playlist-name{
     position: static;
