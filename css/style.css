@@ -8,6 +8,7 @@ body{
   color: grey;
 }
 
+
 main{
   height: calc(100vh - 90px);
   background: #040404;
@@ -138,7 +139,7 @@ main{
 }
 /* /MAIN-CONTENT */
 
-
+/* FOOTER */
 footer{
   padding: 15px;
   height: 90px;
@@ -146,9 +147,14 @@ footer{
   background: #282828;
   position: fixed;
   bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+/* PLAYBACK */
 .playback{
+  width: 30%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -169,6 +175,11 @@ footer{
   font-size: 12px;
 }
 
+.like{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .like i{
   font-size: 16px;
   color: gray;
@@ -176,27 +187,78 @@ footer{
 .like i:last-child{
   margin-left: 10px;
 }
+/* /PLAYBACK */
 
 .playback, .player, .volume{
-  width: 33.33%;
   float: left;
 }
 
+/* PLAYER */
 .player{
   text-align: center;
-}
-.player i{
-  color: white;
+  width: 40%;
 }
 
+.buttons{
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons i{
+  color: white;
+  font-size: 20px;
+}
+
+.buttons .play{
+  font-size: 30px;
+}
+
+.player i:not(:last-child){
+  margin-right: 10px;
+}
+
+.player-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar{
+  display: inline-block;
+  height: 5px;
+  width: 50%;
+  background: grey;
+}
+
+.time{
+  font-size: 12px;
+  margin: 0 10px;
+}
+/* /PLAYER */
+
 .volume{
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
 }
 .volume i{
   color: grey;
+  margin-right: 10px;
 }
 
-/* MEDIA QUERY PER MAIN-NAV */
+.volume-bar{
+  width: 40%;
+  height: 5px;
+  background: grey;
+}
+
+
+
+
+/* MEDIA QUERY PER XS */
 @media screen and (max-width: 768px) {
 
   .disappear, .logo .disappear{
@@ -232,6 +294,45 @@ footer{
     font-size: 16px;
   }
 
+  footer{
+    padding: 5px;
+  }
+
+  .like i:last-child{
+    margin-left: 0;
+  }
+
+  .playback img{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+  }
+  .song-artist{
+    font-size: 10px;
+    margin-right: 5px;
+  }
+  .song-name{
+    font-size: 10px;
+  }
+  .heart{
+    margin-right: 5px;
+  }
+
+  .buttons i{
+    font-size: 15px;
+  }
+  .buttons .play{
+    font-size: 25px;
+  }
+
+  .bar{
+    width: 40%;
+  }
+  .time{
+    font-size: 10px;
+    margin: 0 5px;
+  }
+
 }
 /* /MEDIA QUERY PER MAIN-NAV */
 
@@ -241,7 +342,7 @@ footer{
 
   .playlist-name{
     overflow-y: scroll;
-    height: 145px;
+    height: 150px;
   }
 
 }
