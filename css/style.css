@@ -26,6 +26,7 @@ main{
   bottom: 60px;
 }
 
+/* LOGO */
 .logo{
   padding-bottom: 15px;
 }
@@ -40,7 +41,9 @@ main{
 .logo h1{
   display: inline-block;
 }
+/* /LOGO */
 
+/* HOME, SEARCH, LIBRARY */
 .home i{
   width: 16px;
   height: 16px;
@@ -59,12 +62,14 @@ main{
   padding-top: 10px;
   padding-bottom: 10px;
 }
+/* /HOME, SEARCH, LIBRARY */
 
 .playlist, .install{
   padding-left: 20px;
   padding-right: 20px;
 }
 
+/* PLAYLIST */
 .playlist h3{
   color: white;
 }
@@ -88,7 +93,9 @@ main{
   margin-bottom: 10px;
   display: block;
 }
+/* /PLAYLIST */
 
+/* INSTALL */
 .install{
   width: 200px;
   height: 70px;
@@ -106,6 +113,8 @@ main{
   color: white;
   font-weight: 700;
 }
+/* /INSTALL */
+
 /* /MAIN-NAV */
 
 
@@ -238,6 +247,7 @@ footer{
 }
 /* /PLAYER */
 
+/* VOLUME */
 .volume{
   display: flex;
   align-items: center;
@@ -254,6 +264,9 @@ footer{
   height: 5px;
   background: grey;
 }
+/* /VOLUME */
+
+/* /FOOTER */
 
 
 
@@ -298,10 +311,6 @@ footer{
     padding: 5px;
   }
 
-  .like i:last-child{
-    margin-left: 0;
-  }
-
   .playback img{
     height: 30px;
     width: 30px;
@@ -309,13 +318,13 @@ footer{
   }
   .song-artist{
     font-size: 10px;
-    margin-right: 5px;
+    margin-right: 0;
   }
   .song-name{
     font-size: 10px;
   }
-  .heart{
-    margin-right: 5px;
+  .heart, .folder{
+    margin-left: 3px;
   }
 
   .buttons i{
