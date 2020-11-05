@@ -146,7 +146,63 @@ main{
   border-radius: 10px;
   border: 1px solid white;
 }
+
+/* CONTENT */
+.content{
+  padding: 15px;
+}
+
+/* NAV */
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: 700;
+}
+
+nav ul li{
+  margin: 0 10px;
+}
+/* /NAV */
+
+/* RECENTLY */
+.recently h3, .created h3{
+  color: white;
+  font-weight: 700;
+}
+
+.album-container{
+  display: flex;
+  justify-content: space-around;
+}
+.album{
+  margin: 10px 0;
+  width: 170px;
+}
+.recently .album img{
+  width: 100%;
+}
+
+.text-artist{
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+.text-album{
+  text-align: center;
+}
+/* /RECENTLY */
+
+/* CREATED */
+.created{
+  padding-top: 15px;
+}
+
 /* /MAIN-CONTENT */
+
 
 /* FOOTER */
 footer{
@@ -352,7 +408,7 @@ footer{
   }
 
 }
-/* /MEDIA QUERY PER MAIN-NAV */
+
 
 @media screen and (max-width: 400px) {
 
@@ -361,6 +417,40 @@ footer{
   }
 
 }
+/* /MEDIA QUERY PER XS */
+
+@media screen and (max-width: 1310px) {
+
+  .recently .album{
+    margin: 10px 5px;
+  }
+
+}
+
+@media screen and (max-width: 1170px) {
+
+  .album-container{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .recently .album{
+    margin: 10px 5px;
+    width: calc(100% / 4 - 10px);
+  }
+
+}
+
+
+@media screen and (max-width: 970px) {
+
+  .recently .album{
+    margin: 10px 5px;
+    width: calc(100% / 2 - 10px);
+  }
+
+
+}
+
 
 /* MEDIA QUERY PER SCROLL NOME PLAYLIST E SCOMPARSA INSTALL */
 @media screen and (max-height: 575px){
