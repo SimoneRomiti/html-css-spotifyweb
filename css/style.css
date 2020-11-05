@@ -186,7 +186,6 @@ footer{
 
 .like{
   display: flex;
-  flex-wrap: wrap;
 }
 
 .like i{
@@ -237,7 +236,7 @@ footer{
 .bar{
   display: inline-block;
   height: 5px;
-  width: 50%;
+  width: 60%;
   background: grey;
 }
 
@@ -272,7 +271,7 @@ footer{
 
 
 /* MEDIA QUERY PER XS */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
   .disappear, .logo .disappear{
     display: none;
@@ -323,9 +322,17 @@ footer{
   .song-name{
     font-size: 10px;
   }
+
+  .like{
+    flex-wrap: wrap;
+  }
+  .like i{
+    font-size: 14px;
+  }
   .heart, .folder{
     margin-left: 3px;
   }
+
 
   .buttons i{
     font-size: 15px;
@@ -334,17 +341,26 @@ footer{
     font-size: 25px;
   }
 
-  .bar{
-    width: 40%;
-  }
   .time{
     font-size: 10px;
     margin: 0 5px;
   }
 
+  .volume i{
+    font-size: 12px;
+    margin-right: 8px;
+  }
+
 }
 /* /MEDIA QUERY PER MAIN-NAV */
 
+@media screen and (max-width: 400px) {
+
+  .song-artist, .song-name{
+    font-size: 8px;
+  }
+
+}
 
 /* MEDIA QUERY PER SCROLL NOME PLAYLIST E SCOMPARSA INSTALL */
 @media screen and (max-height: 575px){
