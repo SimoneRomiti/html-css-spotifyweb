@@ -167,7 +167,7 @@ nav ul li{
 /* /NAV */
 
 /* RECENTLY */
-.recently h3, .created h3{
+.recently h3, .created h3, .popular h3{
   color: white;
   font-weight: 700;
 }
@@ -180,7 +180,7 @@ nav ul li{
   margin: 10px 0;
   width: 170px;
 }
-.recently .album img{
+.album img{
   width: 100%;
 }
 
@@ -199,6 +199,27 @@ nav ul li{
 /* CREATED */
 .created{
   padding-top: 15px;
+}
+
+.daily-mix{
+  display: flex;
+  justify-content: space-around;
+}
+
+.mix-primo{
+  width: 170px;
+}
+.mix-primo img{
+  width: 100%;
+}
+/* /CREATED */
+
+/* POPULAR */
+.popular{
+  padding-top: 15px;
+}
+.popular img{
+  border-radius: 50%;
 }
 
 /* /MAIN-CONTENT */
@@ -421,7 +442,7 @@ footer{
 
 @media screen and (max-width: 1310px) {
 
-  .recently .album{
+  .album{
     margin: 10px 5px;
   }
 
@@ -433,7 +454,7 @@ footer{
     flex-wrap: wrap;
     justify-content: flex-start;
   }
-  .recently .album{
+  .album{
     margin: 10px 5px;
     width: calc(100% / 4 - 10px);
   }
@@ -443,7 +464,7 @@ footer{
 
 @media screen and (max-width: 970px) {
 
-  .recently .album{
+  .album{
     margin: 10px 5px;
     width: calc(100% / 2 - 10px);
   }
