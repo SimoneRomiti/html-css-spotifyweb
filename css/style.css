@@ -147,6 +147,7 @@ main{
   padding: 20px;
   position: fixed;
   top: 0;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -158,6 +159,11 @@ main{
   background: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   border: 1px solid white;
+  transition: transform .3s;
+}
+
+.my-btn:hover{
+  transform: scale(1.1);
 }
 
 /* CONTENT */
@@ -210,10 +216,44 @@ nav a:hover{
 .album{
   margin: 10px 0;
   width: 170px;
+  transition: transform .3s;
+}
+
+.cover{
+  position: relative;
 }
 .album img{
   width: 100%;
 }
+.layover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.layover i{
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.album:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+
+}
+.album:hover .layover{
+  background: rgba(0, 0, 0, 0.5);
+}
+.album:hover .layover i{
+  display: block;
+}
+
 
 .text-artist{
   text-align: center;
@@ -224,7 +264,6 @@ nav a:hover{
 }
 .text-album{
   text-align: center;
-  /* color: #56595F; */
 }
 /* /RECENTLY */
 
