@@ -5,7 +5,8 @@
 }
 
 body{
-  color: grey;
+  color: #56595F;
+  font-weight: 600;
 }
 
 
@@ -16,7 +17,7 @@ main{
 
 /* MAIN-NAV */
 .main-nav{
-  width: 200px;
+  width: 250px;
   height: calc(100vh - 160px);
   padding-top: 20px;
   background: #040404;
@@ -26,12 +27,20 @@ main{
   bottom: 60px;
 }
 
+.main-nav a{
+  color: #56595F;
+}
+.main-nav a:hover{
+  text-decoration: none;
+  color: white;
+}
+
 /* LOGO */
 .logo{
   padding-bottom: 15px;
 }
 
-.logo, .home, .search, .library{
+.logo, .search, .library{
   padding-left: 20px;
 }
 .logo i, .logo h1{
@@ -44,9 +53,12 @@ main{
 /* /LOGO */
 
 /* HOME, SEARCH, LIBRARY */
+.home{
+  padding-left: 17px;
+}
 .home i{
   width: 16px;
-  height: 16px;
+  /* height: 16px; */
 }
 
 .home, .search, .library{
@@ -55,7 +67,7 @@ main{
 
 .home{
   color: white;
-  border-left: 2px solid green;
+  border-left: 3px solid #ADFF2F;
 }
 
 .search{
@@ -74,9 +86,9 @@ main{
   color: white;
 }
 
-.create{
-  display: flex;
-  align-items: center;
+.create span{
+  vertical-align: top;
+  line-height: 30px;
 }
 .create i{
   font-size: 30px;
@@ -85,6 +97,7 @@ main{
 
 .playlist-name{
   height: 140px;
+  width: 210px;
 }
 .playlist-name ul{
   padding-top: 10px;
@@ -97,7 +110,7 @@ main{
 
 /* INSTALL */
 .install{
-  width: 200px;
+  width: 250px;
   height: 70px;
   background: #040404;
   position: fixed;
@@ -120,24 +133,24 @@ main{
 
 /* MAIN-CONTENT */
 .main-content{
-  width: calc(100% - 200px);
-  margin-left: 200px;
-  padding-top: 60px;
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  padding-top: 80px;
   height: 100%;
-  background: #121212;
+  background: #141922;
   overflow-y: scroll;
 }
 
 .upgrade{
-  height: 60px;
-  width: calc(100% - 200px);
+  height: 80px;
+  width: calc(100% - 250px);
   padding: 20px;
   position: fixed;
   top: 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background: rgba(100, 100, 100, 0.4);
+  background: rgba(8, 11, 18, 0.7);
 }
 .my-btn{
   padding: 10px;
@@ -163,6 +176,24 @@ nav ul{
 
 nav ul li{
   margin: 0 10px;
+}
+
+nav a{
+  color: #56595F;
+}
+nav a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.active::after{
+  content: '';
+  display: block;
+  height: 3px;
+  background: #ADFF2F;
+  width: 40%;
+  position: relative;
+  left: 30%;
 }
 /* /NAV */
 
@@ -193,6 +224,7 @@ nav ul li{
 }
 .text-album{
   text-align: center;
+  /* color: #56595F; */
 }
 /* /RECENTLY */
 
@@ -240,7 +272,7 @@ footer{
 
 /* PLAYBACK */
 .playback{
-  width: 30%;
+  width: 235px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -282,6 +314,7 @@ footer{
 .player{
   text-align: center;
   width: 40%;
+  margin: 0 15px;
 }
 
 .buttons{
@@ -328,11 +361,11 @@ footer{
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 30%;
+  width: 235px;
 }
 .volume i{
   color: grey;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .volume-bar{
@@ -367,6 +400,9 @@ footer{
 
   .logo, .home, .search, .library{
     padding-left: 0;
+  }
+  .home{
+    padding-right: 3px;
   }
 
   .main-content{
@@ -440,7 +476,7 @@ footer{
 }
 /* /MEDIA QUERY PER XS */
 
-@media screen and (max-width: 1310px) {
+@media screen and (max-width: 1370px) {
 
   .album{
     margin: 10px 5px;
@@ -504,7 +540,7 @@ footer{
   .playlist-name{
     height: 65px;
     position: fixed;
-    width: 160px;
+    /* width: 210px; */
     z-index: 2;
     background: #040404;
   }
