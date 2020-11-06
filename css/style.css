@@ -213,6 +213,7 @@ nav a:hover{
   justify-content: space-around;
 }
 .album{
+  display: block;
   margin: 10px 0;
   width: 170px;
   transition: transform .3s;
@@ -334,7 +335,6 @@ footer{
 .song-name a:hover{
   color: white;
   text-decoration: underline;
-}
 }
 
 .like{
