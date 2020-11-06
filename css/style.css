@@ -15,6 +15,13 @@ main{
   background: #040404;
 }
 
+a{
+  color: #56595F;
+}
+a:hover{
+  text-decoration: none;
+}
+
 /* MAIN-NAV */
 .main-nav{
   width: 250px;
@@ -27,11 +34,7 @@ main{
   bottom: 60px;
 }
 
-.main-nav a{
-  color: #56595F;
-}
 .main-nav a:hover{
-  text-decoration: none;
   color: white;
 }
 
@@ -181,14 +184,10 @@ nav ul{
 }
 
 nav ul li{
-  margin: 0 10px;
+  margin: 0 10px 10px;
 }
 
-nav a{
-  color: #56595F;
-}
 nav a:hover{
-  text-decoration: none;
   color: white;
 }
 
@@ -245,7 +244,6 @@ nav a:hover{
 .album:hover{
   cursor: pointer;
   transform: scale(1.1);
-
 }
 .album:hover .layover{
   background: rgba(0, 0, 0, 0.5);
@@ -253,6 +251,7 @@ nav a:hover{
 .album:hover .layover i{
   display: block;
 }
+
 
 
 .text-artist{
@@ -264,6 +263,7 @@ nav a:hover{
 }
 .text-album{
   text-align: center;
+  color: #56595F;
 }
 /* /RECENTLY */
 
@@ -322,14 +322,19 @@ footer{
   margin-right: 10px;
 }
 
-.song-artist{
+.song-artist a{
   color: white;
   font-weight: 700;
   margin-right: 20px;
 }
-.song-name{
+.song-name a{
   color: grey;
   font-size: 12px;
+}
+.song-name a:hover{
+  color: white;
+  text-decoration: underline;
+}
 }
 
 .like{
@@ -342,6 +347,11 @@ footer{
 }
 .like i:last-child{
   margin-left: 10px;
+}
+
+.like i:hover{
+  color: white;
+  cursor: pointer;
 }
 /* /PLAYBACK */
 
@@ -370,10 +380,18 @@ footer{
 
 .buttons .play{
   font-size: 30px;
+
 }
 
+.player i{
+  transition: transform .2s;
+}
 .player i:not(:last-child){
-  margin-right: 10px;
+  margin-right: 20px;
+}
+.player i:hover{
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .player-bar{
@@ -387,6 +405,30 @@ footer{
   height: 5px;
   width: 60%;
   background: grey;
+  position: relative;
+}
+.bar-white{
+  position: absolute;
+  left: 0;
+  height: 5px;
+  width: 25%;
+  background: white;
+}
+.bar-white i{
+  position: absolute;
+  right: -7%;
+  line-height: 6px;
+  color: white;
+  display: none;
+}
+.bar:hover{
+  cursor: pointer;
+}
+.bar:hover .bar-white{
+  background: #ADFF2F;
+}
+.bar:hover i{
+  display: block;
 }
 
 .time{
@@ -407,10 +449,25 @@ footer{
   margin-right: 15px;
 }
 
+.volume i:hover{
+  color: white;
+  cursor: pointer;
+}
+
 .volume-bar{
   width: 40%;
   height: 5px;
   background: grey;
+  position: relative;
+}
+.bar-white.audio{
+  width: 50%;
+}
+.volume-bar:hover{
+  cursor: pointer;
+}
+.volume-bar:hover .bar-white.audio{
+  background: #ADFF2F;
 }
 /* /VOLUME */
 
@@ -485,6 +542,9 @@ footer{
     margin-left: 3px;
   }
 
+  .player i:not(:last-child){
+    margin-right: 10px;
+  }
 
   .buttons i{
     font-size: 15px;
