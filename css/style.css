@@ -9,7 +9,6 @@ body{
   font-weight: 600;
 }
 
-
 main{
   height: calc(100vh - 90px);
   background: #040404;
@@ -61,7 +60,6 @@ a:hover{
 }
 .home i{
   width: 16px;
-  /* height: 16px; */
 }
 
 .home, .search, .library{
@@ -144,6 +142,7 @@ a:hover{
   overflow-y: scroll;
 }
 
+/* BUTTON E LAYOVER */
 .upgrade{
   height: 80px;
   width: calc(100% - 250px);
@@ -168,8 +167,8 @@ a:hover{
 .my-btn:hover{
   transform: scale(1.1);
 }
+/* /BUTTON E LAYOVER */
 
-/* CONTENT */
 .content{
   padding: 15px;
 }
@@ -253,8 +252,6 @@ nav a:hover{
   display: block;
 }
 
-
-
 .text-artist{
   text-align: center;
   color: white;
@@ -293,6 +290,7 @@ nav a:hover{
 .popular img{
   border-radius: 50%;
 }
+/* /POPULAR */
 
 /* /MAIN-CONTENT */
 
@@ -381,7 +379,6 @@ footer{
 
 .buttons .play{
   font-size: 30px;
-
 }
 
 .player i{
@@ -405,6 +402,7 @@ footer{
   display: inline-block;
   height: 5px;
   width: 60%;
+  min-width: 120px;
   background: grey;
   position: relative;
 }
@@ -442,12 +440,11 @@ footer{
 .volume{
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-around;
   width: 235px;
 }
 .volume i{
   color: grey;
-  margin-right: 15px;
 }
 
 .volume i:hover{
@@ -473,8 +470,6 @@ footer{
 /* /VOLUME */
 
 /* /FOOTER */
-
-
 
 
 /* MEDIA QUERY PER XS */
@@ -566,18 +561,19 @@ footer{
 
   .volume{
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .volume i{
     font-size: 12px;
-    margin-right: 8px;
+    margin-right: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
   }
 
   .volume-bar{
     width: 50%;
+    margin-right: 10px;
   }
 
 }
@@ -590,8 +586,17 @@ footer{
   }
 
 }
+
+@media screen and (max-width: 374px) {
+
+  .bar{
+    min-width: 90px;
+  }
+
+}
 /* /MEDIA QUERY PER XS */
 
+/* MEDIA QUERY MAIN-CONTENT */
 @media screen and (max-width: 1370px) {
 
   .album{
@@ -621,8 +626,8 @@ footer{
     width: calc(100% / 2 - 10px);
   }
 
-
 }
+/* /MEDIA QUERY MAIN-CONTENT */
 
 
 /* MEDIA QUERY PER SCROLL NOME PLAYLIST E SCOMPARSA INSTALL */
