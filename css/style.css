@@ -245,6 +245,12 @@ nav a:hover{
   cursor: pointer;
   transform: scale(1.1);
 }
+.album.empty{
+  margin: 0;
+}
+.album.empty:hover{
+  cursor: default;
+}
 .album:hover .layover{
   background: rgba(0, 0, 0, 0.5);
 }
@@ -673,13 +679,26 @@ footer{
 
 @media screen and (max-height: 435px){
 
+  .main-nav{
+    /* overflow-y: auto; */
+  }
+
   .playlist-name{
     position: static;
-    background: #040404;
   }
 
   .install{
     display: none;
+  }
+
+}
+
+
+@media screen and (max-height: 410px) {
+
+  .main-nav{
+    height: calc(100% - 90px);
+    overflow-y: auto;
   }
 
 }
