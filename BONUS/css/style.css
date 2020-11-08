@@ -140,6 +140,7 @@ a:hover{
   height: 100%;
   background: #141922;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* BUTTON E LAYOVER */
@@ -211,11 +212,15 @@ nav a:hover{
   display: flex;
   justify-content: space-around;
 }
+.album-container.recent{
+  overflow-x: auto;
+}
+
 .album{
   display: block;
-  margin: 10px 0;
-  width: 170px;
-  transition: transform .3s;
+  margin: 10px 5px;
+  width: calc(100% / 6 - 10px);
+  flex-shrink: 0;
 }
 
 .cover{
@@ -243,7 +248,6 @@ nav a:hover{
 
 .album:hover{
   cursor: pointer;
-  transform: scale(1.1);
 }
 .album.empty{
   margin: 0;
@@ -614,7 +618,6 @@ footer{
 @media screen and (max-width: 1200px) {
 
   .album-container{
-    flex-wrap: wrap;
     justify-content: flex-start;
   }
   .album{
@@ -628,7 +631,6 @@ footer{
 @media screen and (max-width: 992px) {
 
   .album{
-    margin: 10px 5px;
     width: calc(100% / 2 - 10px);
   }
 
@@ -703,3 +705,11 @@ footer{
 
 }
 /* /MEDIA QUERY PER SCROLL NOME PLAYLIST */
+
+@media screen and (max-height: 350px){
+
+  .disappear-height{
+    display: none;
+  }
+
+}

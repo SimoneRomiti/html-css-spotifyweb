@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" integrity="sha512-f73UKwzP1Oia45eqHpHwzJtFLpvULbhVpEJfaWczo/ZCV5NWSnK4vLDnjTaMps28ocZ05RbI83k2RlQH92zy7A==" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotifyWeb</title>
+  </head>
+  <body>
+
+    <main>
+      <!-- MAIN-NAV -->
+      <section class="main-nav">
+        <div class="logo">
+          <i class="fab fa-spotify"></i>
+          <h1 class="disappear">Spotify</h1>
+        </div>
+
+        <!-- HOME, SEARCH, LIBRARY -->
+        <div class="home">
+          <a href="#">
+            <i class="fas fa-home"></i>
+            <span class="disappear">Home</span>
+          </a>
+        </div>
+
+        <div class="search">
+          <a href="#">
+            <i class="fas fa-search"></i>
+            <span class="disappear">Search</span>
+          </a>
+        </div>
+
+        <div class="library">
+          <a href="#">
+            <i class="fas fa-book-open"></i>
+            <span class="disappear">La Tua Libreria</span>
+          </a>
+        </div>
+        <!-- /HOME, SEARCH, LIBRARY -->
+
+        <!-- PLAYLIST -->
+        <div class="playlist disappear">
+          <h3>Playlist</h3>
+
+          <div class="create">
+            <a href="#">
+              <i class="fas fa-plus-square"></i>
+              <span>Crea Playlist</span>
+            </a>
+
+          </div>
+
+          <div class="playlist-name">
+            <ul>
+              <li><a href="#">1 Nome Playlist</a></li>
+              <li><a href="#">2 Nome Playlist</a></li>
+              <li><a href="#">3 Nome Playlist</a></li>
+              <li><a href="#">4 Nome Playlist</a></li>
+              <li><a href="#">5 Nome Playlist</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- /PLAYLIST -->
+
+        <!-- INSTALLA -->
+        <div class="install">
+          <a href="#">
+            <i class="fas fa-arrow-circle-down"></i>
+            <span class="disappear">Installa app</span>
+          </a>
+          <hr class="disappear">
+          <i class="fas fa-user-circle"></i>
+          <span class="username disappear">Simone Romiti</span>
+        </div>
+        <!-- /INSTALLA -->
+      </section>
+      <!-- /MAIN-NAV -->
+
+      <!-- MAIN-CONTENT -->
+      <section class="main-content">
+        <!-- BUTTON E LAYOVER -->
+        <div class="upgrade disappear-height">
+          <button type="button" class="my-btn">EFFETTUA L'UPGRADE</button>
+        </div>
+        <!-- /BUTTON E LAYOVER -->
+
+        <div class="content">
+          <!-- NAV -->
+          <nav>
+            <ul>
+              <li class="active">
+                <a href="#">IN EVIDENZA</a>
+              </li>
+              <li>
+                <a href="#">PODCAST</a>
+              </li>
+              <li>
+                <a href="#">CLASSIFICHE</a>
+              </li>
+              <li>
+                <a href="#">GENERI E MOOD</a>
+              </li>
+              <li>
+                <a href="#">NUOVE USCITE</a>
+              </li>
+              <li>
+                <a href="#">SCOPRI</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /NAV -->
+
+          <!-- RECENTLY -->
+          <div class="recently disappear-height">
+            <h3>Recently Played</h3>
+
+            <div class="album-container recent">
+
+              <!-- PRIMO ALBUM -->
+              <a class="album" href="#">
+                <div class="cover">
+                  <img src="img/avenged-sevenfold.jfif" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="text-artist">
+                  Avenged Sevenfold
+                </div>
+                <div class="text-album">
+                  Walking the fallen
+                </div>
+              </a>
+              <!-- /PRIMO ALBUM -->
+
+              <!-- SECONDO ALBUM -->
+              <a class="album" href="#">
+                <div class="cover">
+                  <img src="img/system-of-a-down.png" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="text-artist">
+                  System Of A Down
+                </div>
+                <div class="text-album">
+                  Steal this album!
+                </div>
+              </a>
+              <!-- /SECONDO ALBUM -->
+
+              <!-- TERZO ALBUM -->
+              <a class="album" href="#">
+                <div class="cover">
+                  <img src="img/metallica2.jpg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="text-artist">
+                  Metallica
+                </div>
+                <div class="text-album">
+                  Master of Puppets
+                </div>
+              </a>
+              <!-- /TERZO ALBUM -->
+
+              <!-- QUARTO ALBUM -->
+              <a class="album" href="#">
+                <div class="cover">
+                  <img src="img/falling-in-reverse.jpg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="text-artist">
+                  Falling in Reverse
+                </div>
+                <div class="text-album">
+                  Popular Monster
+                </div>
+              </a>
+                <!-- /QUARTO ALBUM -->
+
+              <!-- QUINO ALBUM -->
+              <a class="album" href="#">
+                <div class="cover">
+                  <img src="img/avenged-sevenfold-city.jpg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="text-artist">
+                  Avenged Sevenfold
+                </div>
+                <div class="text-album">
+                  City of Evil
+                </div>
+              </a>
+              <!-- /QUINO ALBUM -->
+
+              <!-- SESTO ALBUM -->
+              <a class="album" href="#">
+                <div class="cover">
+                  <img src="img/breaking-benjamin2.jpg" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="text-artist">
+                  Breaking Benjamin
+                </div>
+                <div class="text-album">
+                  Dear Agony
+                </div>
+              </a>
+              <!-- /SESTO ALBUM -->
+            </div>
+          </div>
+          <!-- /RECENTLY -->
+
+          <!-- CREATED -->
+          <div class="created disappear-height">
+            <h3>Creato Per Simone Romiti</h3>
+            <p>Più ascolti più accurati saranno i suggerimenti</p>
+
+            <div class="album-container">
+
+              <!-- PRIMO ALBUM -->
+              <a class="album" href="#">
+                <div class="cover">
+                  <img src="img/rockmix.jfif" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="text-artist">
+                  Il tuo mix Rock
+                </div>
+              </a>
+              <!-- /PRIMO ALBUM -->
+
+              <!-- SECONDO ALBUM -->
+              <a class="album" href="#">
+                <div class="cover">
+                  <img src="img/discover.png" alt="">
+                  <div class="layover">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="text-artist">
+                  Discover Weekly
+                </div>
+              </a>
+              <!-- /SECONDO ALBUM -->
+
+              <!-- ALBUM VUOTI PER STRUTTURA FLEX -->
+              <div class="album empty">
+              </div>
+
+              <div class="album empty">
+              </div>
+
+              <div class="album empty">
+              </div>
+
+              <div class="album empty">
+              </div>
+              <!-- /ALBUM VUOTI PER STRUTTURA FLEX -->
+            </div>
+          </div>
+          <!-- /CREATED -->
+
+          <!-- POPULAR -->
+          <div class="popular disappear-height">
+            <h3>Popular Artist</h3>
+            <p>Più ascolti più accurati saranno i suggerimenti</p>
+            <div class="album-container">
+
+              <!-- PRIMO ARTISTA -->
+              <a class="album" href="#">
+                <img src="img/avenged-logo.jpg" alt="">
+                <div class="text-artist">
+                  Avenged Sevenfold
+                </div>
+              </a>
+              <!-- /PRIMO ARTISTA -->
+
+              <!-- SECONDO ARTISTA -->
+              <a class="album" href="#">
+                <img src="img/slipknot-logo.jpg" alt="">
+                <div class="text-artist">
+                  Slipknot
+                </div>
+              </a>
+              <!-- /SECONDO ARTISTA -->
+
+              <!-- ALBUM VUOTI PER STRUTTURA FLEX -->
+              <div class="album empty">
+              </div>
+
+              <div class="album empty">
+              </div>
+
+              <div class="album empty">
+              </div>
+
+              <div class="album empty">
+              </div>
+              <!-- /ALBUM VUOTI PER STRUTTURA FLEX -->
+
+            </div>
+          </div>
+          <!-- /POPULAR -->
+        </div>
+      </section>
+      <!-- /MAIN-CONTENT -->
+    </main>
+
+    <footer>
+
+      <!-- PLAYBACK -->
+      <section class="playback">
+        <img src="img/avenged-sevenfold.jfif" alt="">
+        <div class="song">
+          <a class="song-artist" href="#">Avenged Sevenfold</a>
+
+          <a class="song-name" href="#">Second Heartbeat</a>
+        </div>
+        <div class="like">
+          <div class="heart">
+            <i class="far fa-heart"></i>
+          </div>
+          <div class="folder">
+            <i class="far fa-folder"></i>
+          </div>
+
+        </div>
+      </section>
+      <!-- /PLAYBACK -->
+
+      <!-- PLAYER -->
+      <section class="player">
+        <div class="buttons">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="far fa-play-circle play"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-redo-alt"></i>
+        </div>
+        <div class="player-bar">
+          <div class="time">
+            0:25
+          </div>
+
+          <div class="bar">
+            <div class="bar-white">
+              <i class="fas fa-circle"></i>
+            </div>
+          </div>
+          <div class="time">
+            4:30
+          </div>
+        </div>
+      </section>
+      <!-- PLAYER -->
+
+      <!-- VOLUME -->
+      <section class="volume">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-tv"></i>
+        <i class="fas fa-volume-up"></i>
+        <div class="volume-bar">
+          <div class="bar-white audio">
+          </div>
+        </div>
+      </section>
+      <!-- VOLUME -->
+    </footer>
+
+  </body>
+</html>
